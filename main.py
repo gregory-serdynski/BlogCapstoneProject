@@ -13,6 +13,7 @@ from functools import wraps
 import gunicorn
 
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
@@ -236,5 +237,5 @@ def delete_post(post_id):
     return redirect(url_for('get_all_posts'))
 
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()
